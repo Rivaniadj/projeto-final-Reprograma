@@ -115,30 +115,21 @@ const deletaVetNext = async (req, res) => {
 //           }
 //       };
 
-   
+
+
 const getCategoria = (req, res) => {
-    const categoria = req.params.categoria;
-    const filters = {};
-    Object.assign(filters, { categoria: categoria });
-    VetNext.find({ categoria: categoria }, (err, hospitais) => {
-      if (err) {
-        return res.status(424).send({ message: err.message });
-      };
-      if (!hospitais.length) {
-        return res.status(404).send('Não há hosp');
-      } else {
-        return res.status(200).send(hospitais);
-      };
-    });
+    const { categoria } = req.query;
+    VetNext.find({ categoria: categoria })
+    .then((list) => {
+        if (!list.length > 0) { return res.status(200).json({ message: `Não foi encontrada nenhum hospital com esta categoria. Tente novamente!` }) }
+        res.status(200).json(list)
+    })
+        .then((VetNext) => { res.status(200).json(VetNext) })
+        
+}
 
-    // const vetNextFiltrado = VetNext.find((VetNext) =>
-    //  {return VetNext.categoria == categoria}
-    // );
+   
 
-    // res.status(200).send(vetNextFiltrado);
-
-
-};
 const replacevetNext = (req, res) => {
 
     const authHeader = req.get('authorization');

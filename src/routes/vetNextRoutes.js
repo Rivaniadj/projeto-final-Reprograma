@@ -6,7 +6,7 @@ const controller = require('../controllers/vetNextController')
 router.get('/', controller.getAll);
 
 
-router.get("/vetNext/categoria", controller.getCategoria);
+router.get("/categoria", controller.getCategoria);
 
 //router.get('/bairro', controller.getByBairro);
 
