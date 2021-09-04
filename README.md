@@ -1,134 +1,149 @@
-## Turma Online 12 | Back-end | 2021 | Semana 15: Autenticação e Segurança
-### Vamos preparar o ambiente!
+                PROJETO FINAL 
+               {REPROGRAMA}-  VETNEXT/VETNEXtEXOTIC
 
-Para executar este projeto, você deverá ter instalado o Node.js e as dependências do npm. Será necessário ter instalado o banco de dados Mongodb e suas configurações. Além disso, iremos fazer requisições na API com a plataforma Postman.
 
-Após clonar o projeto, execute o comando abaixo:
 
-- `$ npm install`
 
-## Autenticação
 
--------------------------------
+               OBJETIVO DO PROJETO VetNext
 
-Este projeto já possui rotas organizadas e integração com o banco de dados, conforme aula desenvolvida na s14. O próximo passo agora é criar o processo de autenticação.
 
-Segue as orientações:
+     Devido a necessidade e dificuldade que tive de achar informações de Hopitais Veterinário pensei nesse projeto VetNext, que tem por objetivo auxiliar de uma forma fácil e rápido a busca 
+     de hospitais \Veterinário/ \Emergência e urgência./,  e também hospitais para animais exóticos, que algumas pessoas  tem como animais de estimação, neles poderão encontrar informações necessárias.
 
-### Criar rota autenticada
+     nosso projeto é CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais, cadastrados no baco de dados.
 
-1. Instalar "jsonwebtoken" via npm install
-`$ npm install jsonwebtoken`
+     Como será aplicado?
+     
+     Os donos dos Pets ou animais exóticos poderão acessar a lista dos hospitais de forma livres, 
+     porém, só poderá cadastrar algum do seu interesse criando um token, caso o mesmo n estiver correto receberá uma mensagem de erro. 
 
-2. Gerar chave pelo https://travistidwell.com/jsencrypt/demo/ e guardar a chave pública
+     
+     TECNOLOGIA E DEPENDÊNCIAS USADAS PARA CONSTRUCÃO DA API
 
-3. Instalar dotenv-safe
-`$ npm install dotenv-safe`
+Visual Studio Code;
+Git e Github;
+Postman
+Nodemon;
+MongoDB;
+Mongoose;
+   bcrypt: ^5.0.1
+    cors: ^2.8.5
+    dotenv: ^10.0.0
+    dotenv-safe: ^8.2.0
+    express: ^4.17.1"
+    jsonwebtoken: ^8.5.1
+    mongoose: ^5.13.5
+    nodemon: ^2.0.12
+    
+                
+Estrutura
 
-4. Criar arquivo .env.example e .env, ambos com chave chamada SECRET
-`$ SECRET=chave_rsa_aqui_sem_aspas`
+├── src
+│   ├── controllers
+|   |  ├── administradorController.js
+|   |  ├── vetNextController.js
+|   |  ├── vetNextExoticController.js
+    |__data
+        | __database|
+│   ├── models
+|   |  ├── administrador.js
+|   |  ├── VetNext.js
+       |__ vetNextExotic.js
+│   ├── routes 
+│   |  ├── administradorRoutes.js
+|   |  ├── vetNextExoticRoutes.js
+|   |  ├── vetNextRoutes.js 
+|   ├── .env
+├── .env.example
+|__ package-lock.json
+├── package.json
+├── server.js
 
-5. Carregar as variáveis de ambiente no projeto, no arquivo server.js
-`$ require('dotenv-safe').config();`
 
-6. Depois disso, vamos recriar a String de conexão do localhost, iremos proteger nosso http://localhost... criando uma variável de ambiente chamada MONGODB_URL, que ficará dentro do arquivo `.env`.
+USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXT:
 
-Dentro do arquivo `.env`ficará:
+Método HTTP       EndPoint            Descrição
 
-```SECRET=chave_rsa_aqui_sem_aspas
-   MONGODB_URL= "mongodb://localhost:27017/reprograma"
-```
+POST                 /                  Criar novo VetNext
 
-Na String de conexão no arquivo database.js, ficará:
+GET                  /                  Retorna todos VetNext
 
-```//String de conexão
-mongoose.connect(process.env.MONGODB_URL,  {
-     useNewUrlParser: true,
-     useUnifiedTopology: true
-});
-```
+GET                 /:Id                Lista VetNext por ID
 
-7. Criar variável contendo a SECRET em estudioController.js
-`$ const secret = process.env.SECRET`
+GET                 /categoria          LIsta VetNext por Categoria
 
-8. Criar método de autenticação em `getAll`
+GET                 /bairro             Lista VetNext por Bairro
 
-9. Pegar o header de autorização e enviar uma mensagem de erro 401 quando vir vazio
-`$ const authHeader = request.get('authorization');`
+GET                 /cidade             Lista VetNext por Cidade
 
-```
-const getAll = async (req, res) => {
-  const authHeader = req.get('authorization')
-  const token = authHeader.split(' ')[1];
+PUT                 /:Id                Atualiza informações de um VetNext
 
-  if (!token) {
-    return res.status(401).send("Erro no header")
-  }
+DELETE              /:Id                Remove VetNext específico
 
-  const estudios = await Estudio.find()
-  res.status(200).send(estudios)
+
+USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXTEXOTIC:
+
+
+Método HTTP       EndPoint             Descrição
+
+POST                 /                  Criar novo VetNextExotic
+
+GET                  /                  Retorna todos VetNextExotic
+
+GET                 /:Id                Busca VetNextExotic por ID
+
+GET                 /especialidade      Retorna VetnextExotic espeialidade escolhidas
+
+
+USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO ADMINISTRADOR:
+
+POST                /create               cria o administrador
+
+POST                /create               criar login do administrador
+
+
+ALGUMAS ROTAS DO CRUD USADA NO POSTMAN [VETNEXT]
+
+ROTA PARA LISTAR VETNEXT
+[GET] http://localhost:3333/vetNext/
+
+ROTA PARA BUSCAR POR BAIRRO
+[GET] http://localhost:3333/vetNext/bairro?bairro=Cordeiro
+
+ROTA PARA PARA BUSCAR POR CATEGORIA 
+[GET] http://localhost:3333/vetNext/categoria?categoria=privado
+
+ATUALIZAR VETNEXT PELO ID 
+[GET] http://localhost:3333/vetNext/612c0e0b2dc09c31ccc384ef
+
+
+ALGUMAS ROTAS DO CRUD USADA NO POSTMAN [VETNEXTEXOTIC]
+
+ROTA PARA LISTAR VETNEXTEXOTIC
+[GET] http://localhost:3333/vetnextExotic
+
+ROTA PARA PARA BUSCAR POR ESPECIALIDADE [REPTEIS]
+[GET]http://localhost:3333/vetNextExotic/?especialidade=repteis
+
+
+ROTA PARA CRIAR ADMINISTRADOR
+[POST] http://localhost:3333/administrador/create [SENHA]
+
+"_id": "6132992a02d9e822ece5a99b",
+    "nome": "Riva",
+    "email": "gato@tmail",
+    "senha": "$2b$10$rf9AqeQ6KztBbYZ.NcMAg.aNIgq1Ly9ax1QrwsAovvrWmP2mUCPpG",
+    "__v": 0
+
+
+ ROTA PARA CRIAR [LOGIN] DO ADM
+[POST] http://localhost:3333/administrador/create 
+
+{
+    "messagem": "Login realizado com sucesso",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdhdG9AdG1haWwiLCJpYXQiOjE2MzA3MDQwMzR9.p0vec3g0fZiJacA9U3Kfcu9Wr_BV5ucKPCOgKncIr18"
 }
-```
 
-10. Passar bearer token no header de autenticação via Postman
-`$ Bearer TOKEN_JWT_AQUI`
 
-11. Verificar token JWT e enviar uma mensagem de erro 403 caso seja inválido
-`$ jwt.verify(token, SECRET, (error) => {...});`
 
-Antes de tudo, precisamos importar a biblioteca jwt no controller 
-`$ const jwt = require('jsonwebtoken');`
-
-Agora sim, podemos aplicar o método verify e verificar se tudo está pegando corretamente. 
-Vamos lá!
-```
-  jwt.verify(token, SECRET, function(erro) {
-    if (erro) {
-      return res.status(403).send('Não autorizado');
-    }
-```
------------------------------------------------------------------------------------------------
-### Criar rota para criar usuárias
-
-1. Criar rota para criar usuária em usuariasRoute.js
-`$ router.post('/', controller.create);`
-
-2. Criar model de usuarias com id, nome, email e senha
-
-3. Criar método no controller para criar usuaria
-
-4. Criar uma usuaria de teste via Postman
-
------------------------------------------------------------------------------------------------
-### Criptografar senha das usuárias
-
-1. Instalar bcrypt
-`$ npm install bcrypt`
-
-2. Fazer require do bcrypt no `usuariasController.js`
-`$ const bcrypt = require('bcryptjs');`
-
-3. Gerar hash com senha recebida no body da request
-`$ bcrypt.hashSync(request.body.senha, 10);`
-
-4. Criar nova usuária no banco com a senha hasherizada e o login (email) recebido no body da request
-
------------------------------------------------------------------------------------------------
-### Criar rota de login
-
-1. Criar rota de login em `usuariasRoute.js`
-`$ router.post('/login', controller.login);`
-
-2. Buscar usuária a partir do email recebido na request, e mostrar um erro 404 caso não encontre
-`$ Usuarias.findOne({ email: req.body.email }, function(error, usuaria) {...}`
-
-3. Comparar senha de usuária encontra com a senha recebida via request, e mostrar um erro 401 caso seja diferente
-`$ bcrypt.compareSync(request.body.senha, usuariaEncontrada.senha);`
-
-4. Fazer require do plugin JWT
-`$ const jwt = require('jsonwebtoken');`
-
-5. Importar SECRET e gerar token JWT a partir do nome e secret e devolver na request
-`$ jwt.sign({ name: usuaria.name }, SECRET);`
-
-6. Bater na rota `getAll` via Postman com o token gerado

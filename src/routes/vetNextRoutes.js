@@ -5,16 +5,18 @@ const controller = require('../controllers/vetNextController')
 
 router.get('/', controller.getAll);
 
-
 router.get("/categoria", controller.getCategoria);
 
-//router.get('/bairro', controller.getByBairro);
+router.get('/bairro', controller.getBairro);
 
-//criar um novo hospital/post/save
+router.get('/cidade', controller.getCidade);
+
 router.post('/', controller.createVetNext);
 
 router.get("/:id", controller.getId);
+
 router.delete("/:id", controller.deletaVetNext);
-// //atualizar uma informacao especifica num estudio/patch/findById/save
+
 router.put("/:id", controller.replacevetNext);
+
 module.exports = router

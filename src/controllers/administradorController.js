@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken')
 const SECRET = process.env.SECRET
 
 const create = async (req, res) => {
-  // objetivo: criar uma nova usuária
+  // objetivo: criar uma novo usuário
   // acessar os dados da usuária enviado no body
   const senhaComHash = bcrypt.hashSync(req.body.senha, 10)
   req.body.senha = senhaComHash

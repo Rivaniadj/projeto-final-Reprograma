@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const  VetNext  = require('../models/VetNext')
+const VetNext = require('../models/VetNext')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const SECRET = process.env.SECRET
@@ -53,6 +53,7 @@ const createVetNext = async (req, res) => {
             cidade: req.body.cidade,
             bairro: req.body.bairro,
             categoria: req.body.categoria,
+            valorConsulta: req.body.valorConsulta,
             endereco: req.body.endereco,
             telefone: req.body.telefone,
             cirurgia_Mensal: req.body.cirurgia_Mensal,
@@ -101,34 +102,42 @@ const deletaVetNext = async (req, res) => {
 
 }
 
-// const getByBairro = (req, res) => {
-//     const requestedBairro = request.query.bairro.toLowerCase()
-//     const filteredBairro = VetNext.find(vetnext => vetnext.bairro.tolowerCase().includes(requestedBairro))
-//           console.log(filteredBairro)
-
-//           if (requestedBairro === "" || filteredBairro === undefined) {
-//               res.status(404).send({
-//                   "message": "Por favor, insira um bairro válido."
-//               })
-//           } else {
-//               response.status(200).send(filteredBairro)
-//           }
-//       };
 
 
-
+// /vetNext/categoria?categoria=publico
 const getCategoria = (req, res) => {
     const { categoria } = req.query;
     VetNext.find({ categoria: categoria })
-    .then((list) => {
-        if (!list.length > 0) { return res.status(200).json({ message: `Não foi encontrada nenhum hospital com esta categoria. Tente novamente!` }) }
-        res.status(200).json(list)
-    })
+        .then((list) => {
+            if (!list.length > 0) { return res.status(200).json({ message: `Não foi encontrada nenhum hospital com esta categoria. Tente novamente!` }) }
+            res.status(200).json(list)
+        })
         .then((VetNext) => { res.status(200).json(VetNext) })
-        
+
 }
 
-   
+///vetNext/bairro?bairro=Cordeiro
+const getBairro = (req, res) => {
+    const { bairro } = req.query;
+    VetNext.find({ bairro: bairro })
+        .then((list) => {
+            if (!list.length > 0) { return res.status(200).json({ message: `Não foi encontrada nenhum hospital neste bairro. Tente novamente!` }) }
+            res.status(200).json(list)
+        })
+        .then((VetNext) => { res.status(200).json(VetNext) })
+
+}
+const getCidade = (req, res) => {
+    const { cidade } = req.query;
+    VetNext.find({ cidade: cidade })
+        .then((list) => {
+            if (!list.length > 0) { return res.status(200).json({ message: `Não foi encontrada nenhum hospital nesta cidade. Tente novamente!` }) }
+            res.status(200).json(list)
+        })
+        .then((VetNext) => { res.status(200).json(VetNext) })
+
+}
+
 
 const replacevetNext = (req, res) => {
 
@@ -150,10 +159,10 @@ const replacevetNext = (req, res) => {
         VetNext.findByIdAndUpdate(id, vetNextFromBody, { new: true }, (err, vetnext) => {
             if (err) {
                 return res.status(424).send({ message: err.message });
-            } else if(!vetnext) {
+            } else if (!vetnext) {
 
                 return res.status(404).send("Registro não encontrado");
-            }else{return res.status(200).send(vetnext)}
+            } else { return res.status(200).send(vetnext) }
 
 
         });
@@ -164,15 +173,11 @@ const replacevetNext = (req, res) => {
 
 
 
-
-
-
-
-
 module.exports = {
     getId,
     getAll,
-   // getByBairro,
+    getBairro,
+    getCidade,
     createVetNext,
     deletaVetNext,
     getCategoria,

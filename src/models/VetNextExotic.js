@@ -1,8 +1,7 @@
 const mongoose = require('mongoose')
-
-const vetNextSchema = new mongoose.Schema({
-   _id: mongoose.Schema.Types.ObjectId,
-  nome: {
+ 
+ const  VetNextExotic = new mongoose.Schema({
+  _id: mongoose.Schema.Types.ObjectId,  nome: {
     type: String,
     required: true
   },
@@ -17,6 +16,10 @@ const vetNextSchema = new mongoose.Schema({
   categoria: {
     type: String,
     required: true,
+  },
+  especialidade: {
+    type: Array,
+    required: true
   },
   valorConsulta: {
     type: String,
@@ -35,13 +38,12 @@ const vetNextSchema = new mongoose.Schema({
     required: true,
    
   },
-
+  criadoEm: {
+    type: Date,
+    required: true,
+    default: new Date
+  }
 
 })
-
-module.exports = mongoose.model('vetnext', vetNextSchema);
-//module.exports = { 
-
-  //VetNext
-//};//const VetNext
- 
+  
+  module.exports = mongoose.model('vetnextexoticos', VetNextExotic)
