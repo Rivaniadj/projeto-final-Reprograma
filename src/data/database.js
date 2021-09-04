@@ -1,7 +1,11 @@
 const mongoose = require('mongoose')
 
+require("dotenv").config();
+
+const MONGODB = process.env.MONGODB_URI || process.env.MONGODB_URL
+
 const connect = () => {mongoose.connect(
-  'mongodb://localhost:27017/hospital-db', {
+  MONGODB, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })

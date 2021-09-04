@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require("cors")
 require('dotenv-safe').config()
+const PORT = process.env.PORT || 3333
 
 
 //TODO:
@@ -24,5 +25,5 @@ app.use('/vetnext', vetNextRouter)
 const vetNextExoticRouter = require('./src/routes/vetNextExoticRoutes')
 app.use('/vetnextexotic', vetNextExoticRouter)
 
-app.listen(3333, () => console.log('listening on port 3333'))
+app.listen(PORT, () => console.log('listening on port'))
 
