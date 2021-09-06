@@ -25,5 +25,5 @@ app.use('/vetnext', vetNextRouter)
 const vetNextExoticRouter = require('./src/routes/vetNextExoticRoutes')
 app.use('/vetnextexotic', vetNextExoticRouter)
 
-app.listen(process.env.PORT, () => console.log('listening on port'))
+app.listen(process.env.PORT || 3000, () => console.log('listening on port'))
 
