@@ -5,7 +5,7 @@
 
 
 
-               OBJETIVO DO PROJETO VetNext
+               ###OBJETIVO DO PROJETO VetNext
 
 
      Devido a necessidade e dificuldade que tive de achar informações de Hopitais Veterinário pensei nesse projeto VetNext, que tem por objetivo auxiliar de uma forma fácil e rápido a busca 
@@ -13,32 +13,33 @@
 
      nosso projeto é CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais, cadastrados no baco de dados.
 
-     Como será aplicado?
+     **Como será aplicado?**
      
      Os donos dos Pets ou animais exóticos poderão acessar a lista dos hospitais de forma livres, 
      porém, só poderá cadastrar algum do seu interesse criando um token, caso o mesmo n estiver correto receberá uma mensagem de erro. 
 
      
-     TECNOLOGIA E DEPENDÊNCIAS USADAS PARA CONSTRUCÃO DA API
+     ###TECNOLOGIA E DEPENDÊNCIAS USADAS PARA CONSTRUCÃO DA API
 
-Visual Studio Code;
-Git e Github;
-Postman
-Nodemon;
-MongoDB;
-Mongoose;
-   bcrypt: ^5.0.1
-    cors: ^2.8.5
-    dotenv: ^10.0.0
-    dotenv-safe: ^8.2.0
-    express: ^4.17.1"
-    jsonwebtoken: ^8.5.1
-    mongoose: ^5.13.5
-    nodemon: ^2.0.12
+* **Visual Studio Code;**
+* **Git e Github**;
+* **Postman**;
+* **Nodemon**;
+* **MongoDB**;
+* **Mongoose**;
+   * **bcrypt**: ^5.0.1
+    * **cors**: ^2.8.5
+    * **dotenv**: ^10.0.0
+   * **dotenv-safe**: ^8.2.0
+   * **express**: ^4.17.1"
+    * ***jsonwebtoken**: ^8.5.1
+    * ***mongoose**: ^5.13.5
+    * **nodemon**: ^2.0.12
+    * **Heroku**;
     
                 
-Estrutura
-
+##Estrutura
+```
 ├── src
 │   ├── controllers
 |   |  ├── administradorController.js
@@ -59,22 +60,22 @@ Estrutura
 |__ package-lock.json
 ├── package.json
 ├── server.js
-
+```
 
 ###USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXT:
 
 
- Método HTTP |      EndPoint        |    Descrição                    |
- ------------|----------------------|---------------------------------|
-             |                      |                                 |
- POST        |        `/`           |    Criar novo VetNext           |
- GET         |         `/`          |    Retorna todos VetNext        |
- GET         |        `/:Id`        |    Lista VetNext por ID         |
- GET         |       `/categoria`   |    LIsta VetNext por Categoria  |
- GET         |        `/bairro`     |    Lista VetNext por Bairro     |
- GET         |        `/cidade`     |    Lista VetNext por Cidade     |
- PUT         |        `/:Id`        |    Atualiza info de um VetNext  |
- DELETE      |        `/:Id`        |    Remove VetNext específico    |
+ |Método HTTP  |      EndPoint        |    Descrição                    |
+ |-------------|----------------------|---------------------------------|
+ |             |                      |                                 |
+ | POST        |        `/`           |    Criar novo VetNext           |
+ | GET         |         `/`          |    Retorna todos VetNext        |
+ | GET         |        `/:Id`        |    Lista VetNext por ID         |
+ | GET         |       `/categoria`   |    LIsta VetNext por Categoria  |
+ | GET         |        `/bairro`     |    Lista VetNext por Bairro     |
+ | GET         |        `/cidade`     |    Lista VetNext por Cidade     |
+ | PUT         |        `/:Id`        |    Atualiza info de um VetNext  |
+ | DELETE      |        `/:Id`        |    Remove VetNext específico    |
 
 
 ###USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXTEXOTIC:
@@ -91,7 +92,7 @@ Estrutura
 
 
   ###USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO ADMINISTRADOR:
-  
+
 |                 |                        |                                 |
 |-----------------|------------------------|---------------------------------|
 |POST             |     `/create`          |cria o administrador             |
