@@ -160,8 +160,7 @@ ROTA PARA PARA BUSCAR POR ESPECIALIDADE [REPTEIS]
 O tutor que estiver cadastrado no aplicativo VETNEXT poderá, se houver uma emergência, acionar
 a ambulância mais próxima de seu local.
 
-<p align="center">
+
 ![ animais ](./imagens/animais.png)
-</p>
-<p align="center">
-  <a> 
+
+  
