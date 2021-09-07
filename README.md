@@ -1,17 +1,16 @@
-                PROJETO FINAL 
-               {REPROGRAMA}-  VETNEXT/VETNEXtEXOTIC
+              <p align="center">Projeto Final {Reprograma}  VetNext<p>
 
 
+![vetnext ](./imagens/logovetnext.png)
 
 
-
-               ###OBJETIVO DO PROJETO VetNext
+               ### OBJETIVO DO PROJETO VetNext:
 
 
      Devido a necessidade e dificuldade que tive de achar informações de Hopitais Veterinário pensei nesse projeto VetNext, que tem por objetivo auxiliar de uma forma fácil e rápido a busca 
      de hospitais \Veterinário/ \Emergência e urgência./,  e também hospitais para animais exóticos, que algumas pessoas  tem como animais de estimação, neles poderão encontrar informações necessárias.
 
-     nosso projeto é CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais, cadastrados no baco de dados.
+     nosso projeto é  um CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais cadastrados.
 
      **Como será aplicado?**
      
@@ -19,7 +18,8 @@
      porém, só poderá cadastrar algum do seu interesse criando um token, caso o mesmo n estiver correto receberá uma mensagem de erro. 
 
      
-     ###TECNOLOGIA E DEPENDÊNCIAS USADAS PARA CONSTRUCÃO DA API
+     ### TECNOLOGIA E DEPENDÊNCIAS USADAS PARA CONSTRUCÃO DA API:
+
 
 * **Visual Studio Code;**
 * **Git e Github**;
@@ -100,47 +100,65 @@
 
 
 
-ALGUMAS ROTAS DO CRUD USADA NO POSTMAN [VETNEXT]
+### ALGUMAS ROTAS DO CRUD USADA NO POSTMAN [VETNEXT]:
 
 ROTA PARA LISTAR VETNEXT
-[GET] http://localhost:3333/vetNext/
+[GET] https://projeto-reprograma-vetnext.herokuapp.com/vetNext/
+
+![Rota listar](./imagens/listar_vetnext.png)
 
 ROTA PARA BUSCAR POR BAIRRO
-[GET] http://localhost:3333/vetNext/bairro?bairro=Cordeiro
+[GET] https://projeto-reprograma-vetnext.herokuapp.com/vetnext/bairro?bairro=Várzea
+
+![Rota buscar por bairro ](./imagens/buscar_bairro.png)
 
 ROTA PARA PARA BUSCAR POR CATEGORIA 
-[GET] http://localhost:3333/vetNext/categoria?categoria=privado
+[GET] https://projeto-reprograma-vetnext.herokuapp.com/vetnext/categoria?categoria=publico
 
-ATUALIZAR VETNEXT PELO ID 
-[GET] http://localhost:3333/vetNext/612c0e0b2dc09c31ccc384ef
+![Rota buscar por categoria ](./imagens/buscar_categoria.png)
+
+ATUALIZAR VETNEXT  
+[GET] https://projeto-reprograma-vetnext.herokuapp.com/vetNext/61379a8b7a5bea00046523e1
+
+![Rota atualizar  vetnext](./imagens/atualizar_vetnext.png)
 
 
-ALGUMAS ROTAS DO CRUD USADA NO POSTMAN [VETNEXTEXOTIC]
+![ vetnextexotic ](./imagens/vetnextexotic.png)
+
+
+
+### ALGUMAS ROTAS DO CRUD USADA NO POSTMAN [VETNEXTEXOTIC]:
+
 
 ROTA PARA LISTAR VETNEXTEXOTIC
-[GET] http://localhost:3333/vetnextExotic
+[GET] https://projeto-reprograma-vetnext.herokuapp.com/vetnextexotic
+
+![Rota listar vetnextexotic ](./imagens/listar_vetnextexotic.png)
+
 
 ROTA PARA PARA BUSCAR POR ESPECIALIDADE [REPTEIS]
-[GET]http://localhost:3333/vetNextExotic/?especialidade=repteis
+[GET] https://projeto-reprograma-vetnext.herokuapp.com/vetnextExotic/?especialidade=repteis
+
+![Rota Especialidades](./imagens/rota_especialidade.png)
 
 
-ROTA PARA CRIAR ADMINISTRADOR
-[POST] http://localhost:3333/administrador/create [SENHA]
 
-"_id": "6132992a02d9e822ece5a99b",
-    "nome": "Riva",
-    "email": "gato@tmail",
-    "senha": "$2b$10$rf9AqeQ6KztBbYZ.NcMAg.aNIgq1Ly9ax1QrwsAovvrWmP2mUCPpG",
-    "__v": 0
+### ROTA PARA CRIAR ADMINISTRADOR:
 
+[POST] https://projeto-reprograma-vetnext.herokuapp.com/administrador/create [SENHA]
+
+![Rota criar adm](./imagens/criar_ADM.png)
 
  ROTA PARA CRIAR [LOGIN] DO ADM
-[POST] http://localhost:3333/administrador/create 
+[POST] https://projeto-reprograma-vetnext.herokuapp.com/administrador/login
 
-{
-    "messagem": "Login realizado com sucesso",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdhdG9AdG1haWwiLCJpYXQiOjE2MzA3MDQwMzR9.p0vec3g0fZiJacA9U3Kfcu9Wr_BV5ucKPCOgKncIr18"
-}
+![Rota criar login adm](./imagens/criar_login.png)
 
 
+### FUTURAS MELHORIAS:
 
+O tutor que estiver cadastrado no aplicativo VETNEXT poderá, se houver uma emergência, acionar
+a ambulância mais próxima de seu local.
+
+
+![ animais ](./imagens/animais.png)
