@@ -65,21 +65,14 @@ USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXT:
 
 Método HTTP       EndPoint            Descrição
 
-POST                 /                  Criar novo VetNext
-
-GET                  /                  Retorna todos VetNext
-
-GET                 /:Id                Lista VetNext por ID
-
-GET                 /categoria          LIsta VetNext por Categoria
-
-GET                 /bairro             Lista VetNext por Bairro
-
-GET                 /cidade             Lista VetNext por Cidade
-
-PUT                 /:Id                Atualiza informações de um VetNext
-
-DELETE              /:Id                Remove VetNext específico
+ POST                `/`                 Criar novo VetNext
+ GET                  `/`                   Retorna todos VetNext
+ GET                 /:Id                Lista VetNext por ID
+ GET                 /categoria          LIsta VetNext por Categoria
+ GET                 /bairro             Lista VetNext por Bairro
+ GET                 /cidade             Lista VetNext por Cidade
+ PUT                 /:Id                Atualiza informações de um VetNext
+ DELETE              /:Id                Remove VetNext específico
 
 
 USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXTEXOTIC:
