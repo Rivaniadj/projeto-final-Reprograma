@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const VetNextExotic = require('../models/vetNextExotic')
+const VetNextExotic = require("../models/VetNextExotic")
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const SECRET = process.env.SECRET
@@ -18,16 +18,24 @@ const getId = async (req, res) => {
         })
 };
 
+const getAll = async(req, res) =>{
+    const exotic = await VetNextExotic.find()
+    res.status(200).json(exotic )
+}
 
 
-const getAll = (req, res) => {
-    VetNextExotic.find((err, vetnextExotic) => {
-        if (err) {
-            return res.status(500).send({ message: err.message });
-        };
-        return res.status(200).send(vetnextExotic);
-    });
-};
+
+
+// const getAll = (req, res) => {
+//     console.log(VetNextExotic.find())
+//     // VetNextExotic.find((err, vetnextExotic) => {
+//     //     if (err) {
+//     //         return res.status(500).send({ message: err.message });
+//     //     };
+//     //     return res.status(200).send(vetnextExotic);
+//     // });
+//     res.json(VetNextExotic.find())
+// };
 
 
 
