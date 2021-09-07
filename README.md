@@ -61,39 +61,42 @@ Estrutura
 ├── server.js
 
 
-USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXT:
-
-Método HTTP       EndPoint            Descrição
-
- POST                `/`                 Criar novo VetNext
- GET                  `/`                   Retorna todos VetNext
- GET                 /:Id                Lista VetNext por ID
- GET                 /categoria          LIsta VetNext por Categoria
- GET                 /bairro             Lista VetNext por Bairro
- GET                 /cidade             Lista VetNext por Cidade
- PUT                 /:Id                Atualiza informações de um VetNext
- DELETE              /:Id                Remove VetNext específico
+###USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXT:
 
 
-USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXTEXOTIC:
+ Método HTTP |      EndPoint        |    Descrição                    |
+ ------------|----------------------|---------------------------------|
+             |                      |                                 |
+ POST        |        `/`           |    Criar novo VetNext           |
+ GET         |         `/`          |    Retorna todos VetNext        |
+ GET         |        `/:Id`        |    Lista VetNext por ID         |
+ GET         |       `/categoria`   |    LIsta VetNext por Categoria  |
+ GET         |        `/bairro`     |    Lista VetNext por Bairro     |
+ GET         |        `/cidade`     |    Lista VetNext por Cidade     |
+ PUT         |        `/:Id`        |    Atualiza info de um VetNext  |
+ DELETE      |        `/:Id`        |    Remove VetNext específico    |
 
 
-Método HTTP       EndPoint             Descrição
-
-POST                 /                  Criar novo VetNextExotic
-
-GET                  /                  Retorna todos VetNextExotic
-
-GET                 /:Id                Busca VetNextExotic por ID
-
-GET                 /especialidade      Retorna VetnextExotic espeialidade escolhidas
+###USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXTEXOTIC:
 
 
-USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO ADMINISTRADOR:
+|  Método HTTP    |   EndPoint          |    Descrição                           |
+|-----------------|---------------------|----------------------------------------|               
+|                 |                     |                                        |
+|  POST           |     `/`             |  Criar novo VetNextExotic              |
+|  GET            |     `/`             |  Retorna todos VetNextExotic           |
+|  GET            |     `/:Id`          |  Busca VetNextExotic por ID            |
+|  GET            |     `/especialidade`|  Retorna VetnextExotic espec escolhida |
+                 
 
-POST                /create               cria o administrador
 
-POST                /create               criar login do administrador
+  ###USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO ADMINISTRADOR:
+  
+|                 |                        |                                 |
+|-----------------|------------------------|---------------------------------|
+|POST             |     `/create`          |cria o administrador             |
+|POST             |     `/create`          |criar login do administrador     |
+
 
 
 ALGUMAS ROTAS DO CRUD USADA NO POSTMAN [VETNEXT]
