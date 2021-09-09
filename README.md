@@ -1,4 +1,6 @@
-                             PROJETO FINAL {REPROGRAMA}- VETNEXT
+ <p aling="center">
+  PROJETO FINAL {REPROGRAMA}- VETNEXT
+  </p>                            
     
       
 
@@ -8,9 +10,10 @@
 ![vetnext ](./imagens/logovetnext.png)                        
 
 
-
-                OBJETIVO DO PROJETO VetNext:
-
+ <p aling="center">
+ OBJETIVO DO PROJETO VetNext:
+ </p>       
+ 
     
      Devido a necessidade e dificuldade que tive de achar informações de Hopitais Veterinário pensei nesse projeto VetNext, 
      que tem por objetivo auxiliar de uma forma fácil e rápido a busca de hospitais \Veterinário/ \Emergência e urgência./,  
@@ -18,13 +21,14 @@
      informações necessárias.
 
      Nosso projeto é um CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais cadastrados.
-
-                COMO SERÁ APLICADO?  
-     
+ <p aling="center">
+  COMO SERÁ APLICADO?  
+   </p>     
      Os donos dos Pets ou animais exóticos poderão acessar a lista dos hospitais de forma livres, 
      ou se optarem podem buscar por bairro, cidade,categoria ou se dono de animais exoticos por ex: 
      pode buscar po roedores, verá o hospital que trata dessa especialidade.
   
+    
     
     
      
