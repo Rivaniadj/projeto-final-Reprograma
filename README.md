@@ -158,6 +158,10 @@ ROTA PARA PARA BUSCAR POR ESPECIALIDADE [REPTEIS]
 
 ![Rota criar login adm](./imagens/criar_login.png)
 
+## Regras de Negócios:
+
+Só com autorização o tutor podera cadastrar algum Hospital.
+
 
 ### FUTURAS MELHORIAS:
 
@@ -168,19 +172,19 @@ a ambulância mais próxima de seu local por ele.
 ![ animais ](./imagens/animais.png)
 
 
-###AGRADECIMENTOS
+## AGRADECIMENTOS
 ```
-* **Deus**,
-* **Familia**,
-* **Reprograma**,
-* **Accenture**,
-* **Professoras**,
-* **Monitoras**,
-* **Facilitadora**
-* **Colegas**,
+* Deus,
+* Familia,
+* Reprograma,
+* Accenture,
+* Professoras,
+* Monitoras,
+* Facilitadora,
+* Colegas,
 ```
 
-###HOMENAGEM
+### HOMENAGEM
 
 
 ```
