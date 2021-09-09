@@ -48,7 +48,7 @@
     * **Heroku**;
     
                 
-##Estrutura
+### Estrutura
 ```
 ├── src
 │   ├── controllers
@@ -72,7 +72,7 @@
 ├── server.js
 ```
 
-###USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXT:
+### USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXT:
 
 
  |Método HTTP  |      EndPoint        |    Descrição                    |
@@ -88,7 +88,7 @@
  | DELETE      |        `/:Id`        |    Remove VetNext específico    |
 
 
-###USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXTEXOTIC:
+### USAMOS SEGUINTES ROTAS PARA MANIPULAÇÃO VETNEXTEXOTIC:
 
 
 |  Método HTTP    |   EndPoint          |    Descrição                           |
@@ -171,8 +171,8 @@ Só com autorização o tutor podera cadastrar algum Hospital.
 
 ### FUTURAS MELHORIAS:
 
-Criar um aplicativo VETNEXT , onde o tutor poderá se cadastrar,e se houver uma emergência, acionar
-a ambulância mais próxima de seu local por ele.
+Criar um aplicativo VETNEXT , onde o tutor poderá se cadastrar, e se houver uma emergência, acionar
+a ambulância mais próxima de seu local para transportar o animal.
 
 
 ![ animais ](./imagens/animais.png)
