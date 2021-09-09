@@ -10,17 +10,16 @@
 ![vetnext ](./imagens/logovetnext.png)                        
 
 
- <p aling="center">
+
+<p aling="center">
  OBJETIVO DO PROJETO VetNext:
  </p>       
- 
-    
-     Devido a necessidade e dificuldade que tive de achar informações de Hopitais Veterinário pensei nesse projeto VetNext, 
-     que tem por objetivo auxiliar de uma forma fácil e rápido a busca de hospitais \Veterinário/ \Emergência e urgência./,  
-     e também hospitais para animais exóticos, que algumas pessoas  tem como animais de estimação, neles poderão encontrar
-     informações necessárias.
+  Devido a necessidade e dificuldade que tive de achar informações de Hopitais Veterinário pensei nesse projeto VetNext, 
+  que tem por objetivo auxiliar de uma forma fácil e rápido a busca de hospitais \Veterinário/ \Emergência e urgência./,  
+  e também hospitais para animais exóticos, que algumas pessoas  tem como animais de estimação, neles poderão encontrar
+  informações necessárias.
 
-     Nosso projeto é um CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais cadastrados.
+  Nosso projeto é um CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais cadastrados.
  <p aling="center">
   COMO SERÁ APLICADO?  
    </p>     
