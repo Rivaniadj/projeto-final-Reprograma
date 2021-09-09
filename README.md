@@ -1,4 +1,8 @@
-              Projeto Final {Reprograma}  VetNext
+             <h1 align="center">
+    <br>
+    <p align="center">Projeto Final {Reprograma} - VetNext<p>
+</h1>
+
 
 
 ![vetnext ](./imagens/logovetnext.png)
@@ -12,7 +16,7 @@
 
      nosso projeto é  um CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais cadastrados.
 
-     **Como será aplicado?**
+     ###Como será aplicado?**
      
      Os donos dos Pets ou animais exóticos poderão acessar a lista dos hospitais de forma livres, 
      porém, só poderá cadastrar algum do seu interesse criando um token, caso o mesmo n estiver correto receberá uma mensagem de erro. 
@@ -157,10 +161,62 @@ ROTA PARA PARA BUSCAR POR ESPECIALIDADE [REPTEIS]
 
 ### FUTURAS MELHORIAS:
 
-O tutor que estiver cadastrado no aplicativo VETNEXT poderá, se houver uma emergência, acionar
-a ambulância mais próxima de seu local.
+Criar um aplicativo VETNEXT , onde o tutor poderá se cadastrar,e se houver uma emergência, acionar
+a ambulância mais próxima de seu local por ele.
 
 
 ![ animais ](./imagens/animais.png)
+
+
+###AGRADECIMENTOS
+```
+* **Deus**,
+* **Familia**,
+* **Reprograma**,
+* **Accenture**,
+* **Professoras**,
+* **Monitoras**,
+* **Facilitadora**
+* **Colegas**,
+```
+
+###HOMENAGEM
+
+
+```
+ Nesta manhã vamos lhe falar ,sobre um projeto do **Reprograma** que veio para ficar ,
+foram muitas meninas para uma vaga conquistar.
+ Sexta-feira à noite Vamos nos preparar, porque sábado pela manhã a **Facilitadora Carol**
+ vai falar.
+vai começar a chamada, vamos atenta ficar. para não levar uma falta e nos prejudicar.
+ Não vamos deixar as **Professoras** de lado, foram elas que ensinaram nossos primeiros 
+passos,
+do Git ao Mongo foi uma grande trajetória, e no meio do caminho já  vemos Vitória.
+ Cada um do seu jeitinho contando a sua história, elas agora fazem parte da nossa trajetória,
+apresentando os códigos de uma melhor forma.
+não vou citar nomes porque  seria injusto, mas quero parabenizar em nome do grupo. 
+ Foram muitas **Monitoras** que por aqui passou, Cada um com seu jeitinho um abraço deixou,
+na hora do aperto um help vou gritar. 
+Elas, estarão prontas para nos ajudar,
+era muito código para gente assimilar, muitas informações isso não vou negar.
+deu vontade de desistir, mas estamos aqui, pra Vitórias contar.
+ Cada um Com seus Problemas, com seu dilema enfrentar,
+mas teve alguém muito importante pra etapa nos ajudar.
+ Foi a nossa **Psicóloga** que que veio para somar nos dando palavra de força e nos ajudando 
+ a cabeça levantar
+ Agora o que falar dessa turma tão linda , **On12** agora  faz parte da nossa vida,
+Cada uma com seu jeitinho as duplas foram formando, Segurando uma na mão da outra mesmo 
+dentro do ônibus.
+ O sábado não será mais o mesmo, isso n vou negar ,ainda bem que tem os vídeos pra saudade matar.
+E o whatsapp pra mensagem mandar,
+ Mesmo que seja virtual, um abraço vamos dar, 
+com a conquista de cada uma vamos nos alegrar
+Esse nome é complicado me enrola a língua para falar **bootcamp da ACCENTURE** queremos aplauso dar.
+Agora para finalizar a mentoria vou agradecer , por um papo legal que veio nos trazer ,
+Obrigado **REPROGRAMA** toda equipe foi um prazer ,estamos aqui agradecendo, um abraço **MEU** e da 
+**On 12** possam receber.
+```
+
+
 
   
