@@ -1,30 +1,36 @@
-             <h1 align="center">
-    <br>
-    <p align="center">Projeto Final {Reprograma} - VetNext<p>
-</h1>
+                             PROJETO FINAL {REPROGRAMA}- VETNEXT
+    
+      
+
+       
+
+
+![vetnext ](./imagens/logovetnext.png)                        
 
 
 
-![vetnext ](./imagens/logovetnext.png)
+                OBJETIVO DO PROJETO VetNext:
 
+    
+     Devido a necessidade e dificuldade que tive de achar informações de Hopitais Veterinário pensei nesse projeto VetNext, 
+     que tem por objetivo auxiliar de uma forma fácil e rápido a busca de hospitais \Veterinário/ \Emergência e urgência./,  
+     e também hospitais para animais exóticos, que algumas pessoas  tem como animais de estimação, neles poderão encontrar
+     informações necessárias.
 
-               ### OBJETIVO DO PROJETO VetNext:
+     Nosso projeto é um CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais cadastrados.
 
-    ```
-     Devido a necessidade e dificuldade que tive de achar informações de Hopitais Veterinário pensei nesse projeto VetNext, que tem por objetivo auxiliar de uma forma fácil e rápido a busca 
-     de hospitais \Veterinário/ \Emergência e urgência./,  e também hospitais para animais exóticos, que algumas pessoas  tem como animais de estimação, neles poderão encontrar informações necessárias.
-
-     nosso projeto é  um CRUD completo integrado no banco de dados, onde será possivel listar todos hospitais cadastrados.
-
-     ###Como será aplicado?**
+                COMO SERÁ APLICADO?  
      
      Os donos dos Pets ou animais exóticos poderão acessar a lista dos hospitais de forma livres, 
-     porém, só poderá cadastrar algum do seu interesse criando um token, caso o mesmo n estiver correto receberá uma mensagem de erro. 
+     ou se optarem podem buscar por bairro, cidade,categoria ou se dono de animais exoticos por ex: 
+     pode buscar po roedores, verá o hospital que trata dessa especialidade.
+  
+    
     
      
-     ### TECNOLOGIA E DEPENDÊNCIAS USADAS PARA CONSTRUCÃO DA API:
 
-
+ ### TECNOLOGIA E DEPENDÊNCIAS USADAS PARA CONSTRUCÃO DA API:
+ 
 * **Visual Studio Code;**
 * **Git e Github**;
 * **Postman**;
@@ -174,51 +180,51 @@ a ambulância mais próxima de seu local por ele.
 
 ## AGRADECIMENTOS
 ```
-* Deus,
-* Familia,
-* Reprograma,
-* Accenture,
-* Professoras,
-* Monitoras,
-* Facilitadora,
-* Colegas,
+- Deus,
+- Familia,
+- Reprograma,
+- Accenture,
+- Professoras,
+- Monitoras,
+- Facilitadora,
+- Colegas,
 ```
 
 ### HOMENAGEM
 
 
 ```
- Nesta manhã vamos lhe falar ,sobre um projeto do **Reprograma** que veio para ficar ,
+ Nesta manhã vamos lhe falar ,sobre um projeto do REPROGRAMA que veio para ficar ,
 foram muitas meninas para uma vaga conquistar.
- Sexta-feira à noite Vamos nos preparar, porque sábado pela manhã a **Facilitadora Carol**
- vai falar.
+Sexta-feira à noite Vamos nos preparar, porque sábado pela manhã a FACILITADORA CAROL
+vai falar.
 vai começar a chamada, vamos atenta ficar. para não levar uma falta e nos prejudicar.
- Não vamos deixar as **Professoras** de lado, foram elas que ensinaram nossos primeiros 
+Não vamos deixar as PROFESSORAS de lado, foram elas que ensinaram nossos primeiros 
 passos,
 do Git ao Mongo foi uma grande trajetória, e no meio do caminho já  vemos Vitória.
- Cada um do seu jeitinho contando a sua história, elas agora fazem parte da nossa trajetória,
+Cada um do seu jeitinho contando a sua história, elas agora fazem parte da nossa trajetória,
 apresentando os códigos de uma melhor forma.
 não vou citar nomes porque  seria injusto, mas quero parabenizar em nome do grupo. 
- Foram muitas **Monitoras** que por aqui passou, Cada um com seu jeitinho um abraço deixou,
+Foram muitas MONITORAS que por aqui passou, Cada um com seu jeitinho um abraço deixou,
 na hora do aperto um help vou gritar. 
 Elas, estarão prontas para nos ajudar,
 era muito código para gente assimilar, muitas informações isso não vou negar.
 deu vontade de desistir, mas estamos aqui, pra Vitórias contar.
- Cada um Com seus Problemas, com seu dilema enfrentar,
+Cada um Com seus Problemas, com seu dilema enfrentar,
 mas teve alguém muito importante pra etapa nos ajudar.
- Foi a nossa **Psicóloga** que que veio para somar nos dando palavra de força e nos ajudando 
- a cabeça levantar
- Agora o que falar dessa turma tão linda , **On12** agora  faz parte da nossa vida,
+Foi a nossa PSICÓLOGA que que veio para somar nos dando palavra de força e nos ajudando 
+a cabeça levantar
+Agora o que falar dessa turma tão linda , On12 agora  faz parte da nossa vida,
 Cada uma com seu jeitinho as duplas foram formando, Segurando uma na mão da outra mesmo 
 dentro do ônibus.
- O sábado não será mais o mesmo, isso n vou negar ,ainda bem que tem os vídeos pra saudade matar.
+O sábado não será mais o mesmo, isso n vou negar ,ainda bem que tem os vídeos pra saudade matar.
 E o whatsapp pra mensagem mandar,
- Mesmo que seja virtual, um abraço vamos dar, 
+Mesmo que seja virtual, um abraço vamos dar, 
 com a conquista de cada uma vamos nos alegrar
-Esse nome é complicado me enrola a língua para falar **bootcamp da ACCENTURE** queremos aplauso dar.
+Esse nome é complicado me enrola a língua para falar bootcamp da ACCENTURE queremos aplauso dar.
 Agora para finalizar a mentoria vou agradecer , por um papo legal que veio nos trazer ,
-Obrigado **REPROGRAMA** toda equipe foi um prazer ,estamos aqui agradecendo, um abraço **MEU** e da 
-**On 12** possam receber.
+Obrigado REPROGRAMA toda equipe foi um prazer ,estamos aqui agradecendo, um abraço MEU e da 
+ON 12 POSSAM RECEBER.
 ```
 
 
